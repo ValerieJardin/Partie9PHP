@@ -114,6 +114,7 @@ $currentDate = current($dates);
                   élément (ce qui fait qu'à la prochaine itération, on accédera à l'élément suivant).De plus,
                   la clé de l'élément courant est assignée à la variable $m à chaque itération. * */
                 foreach ($currentDate as $m => $day) {
+                    // Condition qui indique qu'un seul mois est affiché à la vue
                     if ($month == $m) {
                         ?>
                         <!--Titre donnant le mois sélectionné-->            
