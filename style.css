@@ -1,5 +1,5 @@
 body{
-  background-image:url("img/fire.gif");
+    background-image:url("img/fire.gif");
 }
 p{
     display: flex;
@@ -9,11 +9,48 @@ p{
     text-align: center;
     width: 100%;   
 }
-.buttons{
-    margin-top: 20%;
+/** Le calendrier **/
+#calendarBody{
+    background-image:url('img/worldcraft.jpg');
 }
-.button{
-    border-style: groove;
-    border-width: 5px 3px 5px 3px;
-    border-color: #A1D16A;
+div{
+    margin-left: 20px;
+}
+h1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: Chewy;
+    font-size: 50px;
+    color: black;
+}
+h2{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    color: red;
+    font-family: Cookie;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+table, th, td {
+    font-family: Cookie;
+    font-size: 30px;
+    
+}
+table {
+    width: 50%;
+    text-align: center;
+    color: black;
+}
+th {
+    height: 50px;
+    text-align: center;
+    border: 1px solid activeborder;
+}
+td{
+    border: 1px solid activeborder;
+}
+.active{
+    background-color: red;
 }
