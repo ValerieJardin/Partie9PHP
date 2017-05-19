@@ -28,5 +28,13 @@
         ?>
         <!--Affichage de la variable $frenchDate qui correspond à la date actuelle + 20 jours. -->
         <p>Il y a 22 jours nous étions le : <br/>"<?php echo $frenchDate; ?>".</p>
+        <p>CORRECTION :</p>
+        <?php
+        // Indique la date actuelle
+        $date = date_create();
+        // Modifie la date pour donner la date d'il y a 22 jours
+        date_modify($date, '-22 DAYS');
+        ?>
+        <p>Il y a 22 jours nous étions le : "<?php echo date_format($date, 'd-m-Y'); ?>".</p>
     </body>
 </html>

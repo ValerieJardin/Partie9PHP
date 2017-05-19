@@ -61,10 +61,10 @@ $currentDate = current($dates);
     </head>
     <body id="calendarBody">
         <header>
-            <!--L'instruction de langage include inclut et exécute le fichier spécifié en argument. 
-            Il est important de noter que lorsqu'un fichier est include (ou require), les erreurs d'analyse apparaîtront 
-            en HTML tout au début du fichier, et l'analyse du fichier parent ne sera pas interrompue. Pour cette raison, 
-            le code qui est dans le fichier doit être placé entre les balises habituelles de PHP. -->
+      <!--L'instruction de langage include inclut et exécute le fichier spécifié en argument. 
+      Il est important de noter que lorsqu'un fichier est include (ou require), les erreurs d'analyse apparaîtront 
+      en HTML tout au début du fichier, et l'analyse du fichier parent ne sera pas interrompue. Pour cette raison, 
+      le code qui est dans le fichier doit être placé entre les balises habituelles de PHP. -->
             <?php include '../index.php'; ?>
         </header>
         <h1 class="title">Calendrier</h1>

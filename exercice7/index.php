@@ -15,8 +15,6 @@
             <?php include '../index.php'; ?>
         </header>
         <?php
-        // Définition du fuseau horaire par défaut à utiliser.
-        date_default_timezone_set('UTC');
         /** Utilisation de la fonction setlocale() qui modifie les informations de localisation et du paramètre 
           categorie LC_TIME pour le format de date et d'heure avec strftime() * */
         setlocale(LC_TIME, 'fr_FR.utf8');
@@ -28,5 +26,12 @@
         ?>
         <!--Affichage de la variable $frenchDate qui correspond à la date actuelle + 20 jours. -->
         <p>Dans 20 jours nous serons le "<?php echo $frenchDate; ?>".</p>
-    </body>
+        <p>CORRECTION :</p>
+        <?php
+        // Indique la date actuelle
+        $date = date_create();
+        // Modifie la date pour donner la date dans 20 jours
+        date_modify($date, '+20 DAYS');
+        ?>
+        <p>Dans 20 jours nous serons le "<?php echo date_format($date, 'd-m-Y'); ?>".</p>
 </html>

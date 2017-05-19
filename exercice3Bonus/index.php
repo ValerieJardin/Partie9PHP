@@ -16,13 +16,11 @@
             <?php include '../index.php'; ?>
         </header>
         <?php
-        // Définition du fuseau horaire par défaut à utiliser.
-        date_default_timezone_set('UTC');
         /** Utilisation de la fonction setlocale() qui modifie les informations de localisation et du paramètre 
           categorie LC_TIME pour le format de date et d'heure avec strftime() * */
         setlocale(LC_TIME, 'fr_FR.utf8');
         ?>
         <!--Utilisation de la fonction strftime() qui formate une date/heure locale avec la configuration locale-->
-        <p>Aujourd'hui nous sommes : <br/><?php echo strftime('%A %e %B %G'); ?></p> 
+        <p>Aujourd'hui nous sommes : <br/><?php echo strftime('%A %d %B %Y'); ?></p> 
     </body>
 </html>

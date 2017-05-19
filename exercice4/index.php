@@ -15,10 +15,6 @@
         <header>
             <?php include '../index.php'; ?>
         </header>
-        <?php
-        // Définition du fuseau horaire par défaut à utiliser.
-        date_default_timezone_set('UTC');
-        ?>
         <!--Utilisation de la fonction mktime() qui retourne le timestamp UNIX d'une date-->
         <p>Voici le timestamp actuel : <br/><?php echo time(); ?></p> 
         <p>Voici le timestamp du 2 août 2016 à 15H : <?php echo mktime(15, 0, 0, 8, 2, 2016) ?></p>

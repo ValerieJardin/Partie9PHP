@@ -15,12 +15,8 @@
         <header>
             <?php include '../index.php'; ?>
         </header>
-        <?php
-        // Définition du fuseau horaire par défaut à utiliser.
-        date_default_timezone_set('UTC');
-        ?>
-        <!--Utilisation de la fonction date()qui retourne une date en anglais sous forme d'une chaîne, au format donné par 
-        le paramètre format = l l F y-->
+        <!--Utilisation de la fonction date()qui retourne une date en anglais sous forme d'une chaîne, au 
+        format donné par le paramètre format = l l F y-->
         <p>Today we are : <br/><?php echo date('l j F Y'); ?></p> 
     </body>
 </html>

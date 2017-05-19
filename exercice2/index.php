@@ -14,12 +14,8 @@
         <header>
             <?php include '../index.php'; ?>
         </header>
-        <?php
-        // Définition du fuseau horaire par défaut à utiliser.
-        date_default_timezone_set('UTC');
-        ?>
-        <!--Utilisation de la fonction date()qui retourne une date sous forme d'une chaîne, au format donné par le paramètre 
-        format = d-m-y-->
+        <!--Utilisation de la fonction date()qui retourne une date sous forme d'une chaîne, au format donné 
+        par le paramètre format = d-m-y-->
         <p>Aujourd'hui nous sommes le : <?php echo date('d-m-y'); ?></p> 
     </body>
 </html>
